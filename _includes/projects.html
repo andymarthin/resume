@@ -3,7 +3,7 @@
   <div class="intro">
       
   </div><!--//intro-->
-  {% for project in site.projects %}
+  {% for project in site.data.content.projects %}
     <div class="item">
       <span class="project-title"><a href="{{ project.url }}">{{project.name }}</a></span> -
       <span class="project-tagline">{{ project.description }}</span>
