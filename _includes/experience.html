@@ -1,18 +1,22 @@
 <section class="section experiences-section">
                 <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Junior Programmer</h3>
-                            <div class="time">Juny 2017 - Present</div>
-                        </div><!--//upper-row-->
-                        <div class="company">PT Veit Solusi Indonesia</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                    </div><!--//details-->
-                </div><!--//item-->
-
+                {% for experience in site.experiences %}
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">{{ experience.position }}</h3>
+                                <div class="time">{{ experience.from }} - {{ experience.until }}</div>
+                            </div><!--//upper-row-->
+                            <div class="company">{{ experience.company }}, {{experience.location }}</div>
+                        </div><!--//meta-->
+                        <div class="details">
+                            <p>{{ experience.description }}</p>
+                            <ul>
+                                {% for job in experience.jobs %}
+                                    <li>{{ job.desc }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div><!--//details-->
+                    </div><!--//item-->
+                {% endfor %}
             </section><!--//section-->

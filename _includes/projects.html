@@ -1,21 +1,12 @@
 <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-                <div class="intro">
-                    <p>Beberapa Project yang pernah Dikerjakan.</p>
-                </div><!--//intro-->
-                <div class="item">
-                  <span class="project-title"><a href="">Database Karyawan Universitas Bung Karno</a></span> -
-                  <span class="project-tagline">Database Karyawan Univesitas Bung Karno berbasis desktop dibangun mengunakan JAVA dan mengunakan database H2</span>
-                </div>
-
-                <div class="item">
-                    <span class="project-title"><a href="http://nakitostudio.com" target="_blank">Nakito Studio</a></span> -
-                    <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
-                </div><!--//item-->
-                <div class="item">
-                  <span class="project-title"><a href="#" target="_blank">Sistem Informasi Distribusi Abstrak</a></span>  -
-                  <span class="project-tagline">Sistem Informasi Berbasis Web</span>
-
-
-                </div>
-            </section><!--//section-->
+  <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+  <div class="intro">
+      
+  </div><!--//intro-->
+  {% for project in site.projects %}
+    <div class="item">
+      <span class="project-title"><a href="{{ project.url }}">{{project.name }}</a></span> -
+      <span class="project-tagline">{{ project.description }}</span>
+    </div>
+  {% endfor %}
+</section><!--//section-->

@@ -1,8 +1,10 @@
  <div class="education-container container-block">
 <h2 class="container-block-title">Education</h2>
-<div class="item">
-    <h4 class="degree">Teknik Informatika</h4>
-    <h5 class="meta">STMIK Bina Mulia</h5>
-    <div class="time">2010 - 2014</div>
-</div><!--//item-->
+    {% for edu in site.educations %}
+        <div class="item">
+            <h4 class="degree">{{edu.major}}</h4>
+            <h5 class="meta">{{edu.school}}</h5>
+            <div class="time">{{edu.year}}</div>
+        </div><!--//item-->
+    {% endfor %}
 </div><!--//education-container-->
