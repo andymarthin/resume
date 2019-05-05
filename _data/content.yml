@@ -46,7 +46,7 @@ skills:
         level: 30
   
   -
-    catagory: Tools
+    category: Tools
     list:
       -
         name: "Git"
