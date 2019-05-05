@@ -1,37 +1,81 @@
-career-profile:
-  summary: 
+# career-profile:
+#   title: Career Profile
+#   summary: 
 
 skills:
   - 
-    name: "Ruby on Rails"
-    level: 80
-  -
-    name: "Git"
-    level: 80
-  -
-    name: JavaScript
-    level: 70
-  
-  - 
-    name: PHP
-    level: 60
-  
-  -
-    name: Trello
-    level: 70
+    category: "Programming"
+    list:
+      - 
+        name: "Ruby"
+        level: 80
+      -
+        name: "PHP"
+        level: 60
+      -
+        name: "JavaScript"
+        level: 60
+      -
+        name: "Java"
+        level: 50
   
   -
-    name: MySql
-    level: 70
-  
-  -
-    name: PostgreSQL
-    level: 70
-  
-  - 
-    name: Laravel
-    level: 60
+    category: Database
+    list:
+      -
+        name: MySql
+        level: 70
+      
+      -
+        name: PostgreSQL
+        level: 70
 
+  -
+    category: Framework
+    list:
+      - 
+        name: "Ruby on Rails"
+        level: 80
+      
+      - 
+        name: Laravel
+        level: 60
+      
+      - 
+        name: ReactJs
+        level: 30
+  
+  -
+    catagory: Tools
+    list:
+      -
+        name: "Git"
+        level: 80
+      -
+        name: Trello
+        level: 70
+  
+  - 
+    category: Operating System
+    list:
+      -
+        name: "Linux"
+        level: 75
+      -
+        name: "Mac OSX"
+        level: 80
+  -
+    category: Infrastructure
+    list: 
+      -
+        name: "Heroku"
+        level: 75  
+  - 
+    category: Other
+    list:
+      -
+        name: "Web Service"
+        level: 75  
 
 educations:
   -
@@ -54,30 +98,54 @@ interests:
     name: "Linux"
 
 experiences:
+  -
+    company: PT. Inti Kreatif Infotmatika
+    role: Back-End Developer
+    location: Jakarta
+    from: October 2017
+    until: Present
+    description: |
+       PT. Inti Kreatif Infotmatika or owner digital agency is a digital agency that helps companies to develop business through the manufacture company profile, web applications, mobile applications, as well as through digital marketing.
+       - Develop Back-end and web service using ruby on rails
+       - Maintenance existing project
+       - Setup Server
+
   - 
     company: "PT Veit Solusi Indonesia"
-    position: "Junior Programmer"
+    role: "Junior Programmer"
     location: "Jakarta"
     from: Juny 2017
     until: September 2017
-    description: 
+    description: |
+      VEIT Solusi Indonesia is a digital marketing agency company in Indonesia that handles software and other digital assets to keep up with the fastest digital movement in Indonesia and even in the worldwide.
     jobs:
       - desc: Develop Web Service Using Laravel
       - desc: Develop iOS App using XCode and Swift 3
-      - desc: Android App using Android Studio and java
+      - desc: Develop Android App using Android Studio and java
 
 projects:
   -
+    name: Laundrian
+    description: Laundrian is a platform that offers the best laundry service in Jakarta. as back end using ruby on rails
+    url: https://play.google.com/store/apps/details?id=id.co.laundrian
+  -
+    name: Royal Greyhound
+    description: As back end using ruby on rails
+    url: https://play.google.com/store/apps/details?id=com.inti.rgh
+  -
+    name: Utoo Central
+    description: | 
+      Crowdsourcing platform where entrepreneurs can share their journeys from the moment an idea is born. As back end using ruby on rails
+    url: https://utoocentral.com
+  -
+    name: Simas LEAD
+    description: Applications used to refer Micro credit by partner Agent Bank Sinarmas. as back end using ruby on rails
+    url: https://play.google.com/store/apps/details?id=com.banksinarmas.sinarmaslead
+  -
+    name: BestTop
+    description:  as back end using ruby on rails
+    url: http://careermentorsingapore.com/
+  -
     name: Database Karyawan Universitas Bung Karno
     description: The desktop-based employee information system of the University of Bung Karno was built using JAVA and H2 as a database.
-    url: "#"
-
-  -
-    name: Nakito Studio 
-    description: A responsive website template designed to help web developers/designers market their services. 
-    url: "http://nakitostudio.com"
-
-  -
-    name: Sistem Informasi Distribusi Abstrak
-    description: Sistem Informasi Berbasis Web
     url: "#"

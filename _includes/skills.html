@@ -1,16 +1,19 @@
 <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-                <div class="skillset">
-                    {% for skill in site.data.content.skills %}
+    <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+    <div class="skillset">
+        {% for skill in site.data.content.skills %}
 
-                    <div class="item">
-                            <h3 class="level-title">{{skill.name}}</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="{{skill.level}}%">
-                                </div>
-                            </div><!--//level-bar-->
-                        </div><!--//item-->
-                    {% endfor %}
-                    
-                </div>
-            </section><!--//skills-section-->
+            <h4 class="section-title">{{skill.category}}</h4>
+            {% for list in skill.list %}
+            <div class="item">
+                    <h3 class="level-title">{{list.name}}</h3>
+                    <div class="level-bar">
+                        <div class="level-bar-inner" data-level="{{list.level}}%">
+                        </div>
+                    </div><!--//level-bar-->
+                </div><!--//item-->
+            {% endfor %}
+        {% endfor %}
+        
+    </div>
+</section><!--//skills-section-->
