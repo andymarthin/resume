@@ -47,6 +47,10 @@
                      <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@webjeda" target="_blank">@webjeda</a></li>
                     {% endif %}
 
+                    {% if site.telegram %}
+                    <li class="telegram"><i class="fa fa-telegram"></i><a href="https://t.me/{{ site.telegram }}" target="_blank">@{{ site.telegram }}</a></li>
+                    {% endif %}
+
                 </ul>
             </div><!--//contact-container-->
            {% include education.html %}
